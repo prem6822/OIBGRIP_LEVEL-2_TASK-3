@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>To-Do-WebApp</title>
+	<link rel="stylesheet" href="styles.css" />
+
+</head>
+<body>
+
+	<header>
+		<h1><em>To-Do-List</em></h1>
+		<form id="new-task-form">
+			<input type="text" name="new-task-input" id="new-task-input" placeholder="What's your new task?" />
+			<input type="submit" id="new-task-submit" value="Add-Task" />
+			<input type="reset" id="new-task-submit" value="Clear-All-Tasks"/>
+		</form>
+	</header>
+
+	<main>
+
+    <section class="task-list">
+
+			<h2><em>Pending Tasks</em></h2>
+
+			<div id="tasks">
+				<div class="task p">
+					<div class="content">
+						<input type="text" class="text" value="Tasks to be completed" readonly>
+					</div>
+				</div>
+			</div>
+		</section>
+
+    <section class="task-list">
+
+      <h2><em>Completed Tasks</em></h2>
+
+      <div id="completed-tasks">
+        <div class="task c">
+          <div class="content">
+            <input type="text" class="text" value="All completed tasks" readonly>
+          </div>
+        </div>
+      </div>
+    </section>
+
+	</main>
+
+	<script src="index.js"></script>
+
+</body>
+</html>
